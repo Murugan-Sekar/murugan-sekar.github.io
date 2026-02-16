@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murugan S | QA Engineer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Murugan S, a QA Engineer specializing in manual, functional, and regression testing for web and mobile applications.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top glass-effect" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#hero">Murugan S<span class="text-accent">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#workflow">Workflow</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button class="btn btn-sm btn-outline-light rounded-circle" id="themeToggle"
+                            aria-label="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="d-flex align-items-center text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center fade-up">
+                    <p class="lead text-accent mb-2">Hello, I'm</p>
+                    <h1 class="display-3 fw-bold mb-3">Murugan S</h1>
+                    <h2 class="h3 mb-4 text-light-50">QA Engineer | Software Test Engineer</h2>
+                    <p class="lead mb-5 mx-auto" style="max-width: 700px;">
+                        "Delivering reliable software through structured testing, strong analytical thinking, and
+                        user-focused quality assurance."
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#experience" class="btn btn-primary btn-lg px-4">View Experience</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Background Overlay -->
+        <div class="hero-overlay"></div>
+    </header>
+
+    <main>
+        <!-- About Me Section -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-4 mb-lg-0 fade-up">
+                        <div class="position-relative">
+                            <img src="https://ui-avatars.com/api/?name=Murugan+S&background=0d6efd&color=fff&size=400&font-size=0.33"
+                                alt="Murugan S" class="img-fluid rounded-4 shadow-lg w-100">
+                            <div
+                                class="experience-badge bg-white text-primary p-3 rounded-4 shadow position-absolute bottom-0 end-0 m-3 text-center">
+                                <span class="h2 d-block fw-bold mb-0">2+</span>
+                                <span class="small fw-bold text-uppercase">Years Exp.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ps-lg-5 fade-up">
+                        <h6 class="text-accent text-uppercase letter-spacing mb-2">About Me</h6>
+                        <h2 class="fw-bold mb-4">Passionate about Quality & <br>User Experience</h2>
+                        <p class="text-muted lead mb-4">
+                            A Quality Assurance Engineer with 2+ years of hands-on experience in software testing and
+                            prior experience in customer support operations. Skilled in validating web and mobile
+                            applications through structured testing methodologies including Smoke, Sanity, Functional,
+                            and Regression testing.
+                        </p>
+                        <p class="text-muted mb-4">
+                            Experienced working closely with developers, business stakeholders, and cross-functional
+                            teams in Agile environments to improve product quality and user satisfaction. Strong
+                            analytical mindset with attention to detail and a proactive approach to problem-solving.
+                        </p>
+
+                        <div class="row pt-2">
+                            <div class="col-sm-4 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-accent me-2"></i>
+                                    <span class="fw-medium">Detail-oriented</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-comments text-accent me-2"></i>
+                                    <span class="fw-medium">Strong Communication</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-users text-accent me-2"></i>
+                                    <span class="fw-medium">User-Focused</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Skills Section -->
+        <section id="skills" class="section-padding bg-light">
+            <div class="container">
+                <div class="text-center mb-5 fade-up">
+                    <h6 class="text-accent text-uppercase letter-spacing mb-2">My Expertise</h6>
+                    <h2 class="fw-bold">Core Skills & Tools</h2>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Testing Expertise -->
+                    <div class="col-md-6 col-lg-3 fade-up">
+                        <div class="card h-100 border-0 shadow-sm skill-card">
+                            <div class="card-body p-4 text-center">
+                                <div class="icon-box bg-primary-subtle text-primary rounded-circle mx-auto mb-3">
+                                    <i class="fas fa-vial fa-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Testing Expertise</h5>
+                                <ul class="list-unstyled text-muted text-start small mb-0">
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Manual Testing
+                                    </li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Functional &
+                                        Regression</li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Smoke & Sanity
+                                    </li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>UI/UX Validation
+                                    </li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Web & Mobile
+                                        Apps</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lifecycle & Methodologies -->
+                    <div class="col-md-6 col-lg-3 fade-up">
+                        <div class="card h-100 border-0 shadow-sm skill-card">
+                            <div class="card-body p-4 text-center">
+                                <div class="icon-box bg-success-subtle text-success rounded-circle mx-auto mb-3">
+                                    <i class="fas fa-sync-alt fa-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Methodologies</h5>
+                                <ul class="list-unstyled text-muted text-start small mb-0">
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>STLC & SDLC</li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Agile / Scrum
+                                    </li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Test Planning
+                                    </li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Defect
+                                        Management</li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Requirement
+                                        Analysis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="col-md-6 col-lg-3 fade-up">
+                        <div class="card h-100 border-0 shadow-sm skill-card">
+                            <div class="card-body p-4 text-center">
+                                <div class="icon-box bg-warning-subtle text-warning rounded-circle mx-auto mb-3">
+                                    <i class="fas fa-tools fa-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Tools</h5>
+                                <ul class="list-unstyled text-muted text-start small mb-0">
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>JIRA</li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>MantisBT</li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Aptest</li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>TestLodge</li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Postman (Basic)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Skills -->
+                    <div class="col-md-6 col-lg-3 fade-up">
+                        <div class="card h-100 border-0 shadow-sm skill-card">
+                            <div class="card-body p-4 text-center">
+                                <div class="icon-box bg-info-subtle text-info rounded-circle mx-auto mb-3">
+                                    <i class="fas fa-user-tie fa-2x"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3">Professional</h5>
+                                <ul class="list-unstyled text-muted text-start small mb-0">
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Analytical
+                                        Thinking</li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Problem Solving
+                                    </li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Collaboration
+                                    </li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Communication
+                                    </li>
+                                    <li class="mb-2"><i class="fas fa-angle-right me-2 text-accent"></i>Customer Focus
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5 fade-up">
+                    <h6 class="text-accent text-uppercase letter-spacing mb-2">My Journey</h6>
+                    <h2 class="fw-bold">Professional Experience</h2>
+                </div>
+
+                <div class="timeline position-relative">
+                    <!-- Item 1 -->
+                    <div class="timeline-item mb-5 fade-up">
+                        <div class="row g-0 justify-content-center">
+                            <div class="col-md-5 order-md-1 text-md-end pe-md-4">
+                                <div class="text-muted mb-1"><i class="far fa-calendar-alt me-2"></i>Jul 2024 – Present
+                                </div>
+                                <h4 class="fw-bold text-primary">QA Engineer</h4>
+                                <h5 class="fw-medium mb-3">Mazeworks Solutions Pvt Ltd</h5>
+                            </div>
+                            <div class="col-md-2 order-md-2 text-center position-relative">
+                                <div class="timeline-dot bg-primary border-4 border-white border rounded-circle shadow">
+                                </div>
+                            </div>
+                            <div class="col-md-5 order-md-3 ps-md-4">
+                                <div class="card border-0 shadow-sm p-4">
+                                    <p class="mb-3">Performed testing across synchronized web and mobile applications,
+                                        participating in full STLC from requirements to reporting.</p>
+                                    <h6 class="fw-bold text-accent mb-2">Key Projects:</h6>
+                                    <ul class="list-unstyled small text-muted mb-0">
+                                        <li class="mb-1">🔹 <strong>DelEx (Dubai Petroleum):</strong> Asset inspection
+                                            system</li>
+                                        <li class="mb-1">🔹 <strong>NTC Logistics:</strong> Route survey & Driver app
+                                        </li>
+                                        <li class="mb-1">🔹 <strong>Hatsun Enterprise:</strong> Business management
+                                            platform</li>
+                                        <li>...and more covering Performance & Production tracking.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item mb-5 fade-up">
+                        <div class="row g-0 justify-content-center">
+                            <div class="col-md-5 order-md-1 text-md-end pe-md-4">
+                                <div class="card border-0 shadow-sm p-4">
+                                    <h6 class="fw-bold text-accent mb-2">Achievements:</h6>
+                                    <ul class="list-unstyled small text-muted mb-0">
+                                        <li class="mb-1">✔️ Resolved customer issues via chat/email</li>
+                                        <li>✔️ Maintained high CSAT scores</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2 order-md-2 text-center position-relative">
+                                <div
+                                    class="timeline-dot bg-secondary border-4 border-white border rounded-circle shadow">
+                                </div>
+                            </div>
+                            <div class="col-md-5 order-md-3 ps-md-4">
+                                <div class="text-muted mb-1"><i class="far fa-calendar-alt me-2"></i>Aug 2023 – Apr 2024
+                                </div>
+                                <h4 class="fw-bold text-primary">Customer Support Executive</h4>
+                                <h5 class="fw-medium mb-3">Hexaware Technologies</h5>
+                                <p class="text-muted small">Project: Myntra customer support ecosystem.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item fade-up">
+                        <div class="row g-0 justify-content-center">
+                            <div class="col-md-5 order-md-1 text-md-end pe-md-4">
+                                <div class="text-muted mb-1"><i class="far fa-calendar-alt me-2"></i>Mar 2022 – Mar 2023
+                                </div>
+                                <h4 class="fw-bold text-primary">Software Test Engineer</h4>
+                                <h5 class="fw-medium mb-3">HCL Technologies</h5>
+                            </div>
+                            <div class="col-md-2 order-md-2 text-center position-relative">
+                                <div class="timeline-dot bg-primary border-4 border-white border rounded-circle shadow">
+                                </div>
+                            </div>
+                            <div class="col-md-5 order-md-3 ps-md-4">
+                                <div class="card border-0 shadow-sm p-4">
+                                    <p class="mb-3">worked on <strong>Alexandra platform</strong> for remote
+                                        configuration of multifunction printers.</p>
+                                    <ul class="list-unstyled small text-muted mb-0">
+                                        <li class="mb-1">🔹 Functional & Regression testing</li>
+                                        <li class="mb-1">🔹 Requirement validation</li>
+                                        <li>🔹 Defect tracking & collaboration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Impact Section -->
+        <section id="projects" class="section-padding bg-light">
+            <div class="container">
+                <div class="text-center mb-5 fade-up">
+                    <h6 class="text-accent text-uppercase letter-spacing mb-2">Work Highlights</h6>
+                    <h2 class="fw-bold">Project Impact</h2>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 fade-up">
+                        <div class="d-flex p-4 h-100 bg-white shadow-sm rounded-4 align-items-start impact-card">
+                            <div class="flex-shrink-0 me-3">
+                                <i class="fas fa-check-double fa-2x text-success"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold h6">End-to-End Testing</h5>
+                                <p class="text-muted small mb-0">Executed comprehensive E2E testing across multiple
+                                    enterprise applications ensuring seamless flows.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 fade-up">
+                        <div class="d-flex p-4 h-100 bg-white shadow-sm rounded-4 align-items-start impact-card">
+                            <div class="flex-shrink-0 me-3">
+                                <i class="fas fa-rocket fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold h6">Release Stability</h5>
+                                <p class="text-muted small mb-0">Improved release stability significantly through
+                                    structured and rigorous regression testing cycles.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 fade-up">
+                        <div class="d-flex p-4 h-100 bg-white shadow-sm rounded-4 align-items-start impact-card">
+                            <div class="flex-shrink-0 me-3">
+                                <i class="fas fa-search-plus fa-2x text-warning"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold h6">Defect Identification</h5>
+                                <p class="text-muted small mb-0">Identified critical usability and functional defects
+                                    early, directly improving overall user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 fade-up">
+                        <div class="d-flex p-4 h-100 bg-white shadow-sm rounded-4 align-items-start impact-card">
+                            <div class="flex-shrink-0 me-3">
+                                <i class="fas fa-users-cog fa-2x text-info"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold h6">Agile Collaboration</h5>
+                                <p class="text-muted small mb-0">Collaborated effectively with cross-functional teams in
+                                    fast-paced Agile environments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 fade-up">
+                        <div class="d-flex p-4 h-100 bg-white shadow-sm rounded-4 align-items-start impact-card">
+                            <div class="flex-shrink-0 me-3">
+                                <i class="fas fa-file-alt fa-2x text-secondary"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold h6">Documentation</h5>
+                                <p class="text-muted small mb-0">Maintained detailed test documentation, test cases, and
+                                    defect reports for future reference.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Project Portfolio Section -->
+        <section id="portfolio" class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5 fade-up">
+                    <h6 class="text-accent text-uppercase letter-spacing mb-2">Detailed Work</h6>
+                    <h2 class="fw-bold">Project Portfolio</h2>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-lg-4 col-md-6 fade-up">
+                        <div class="card h-100 border-0 shadow-sm project-card p-4">
+                            <span class="project-badge">Web & Mobile Application</span>
+                            <h5 class="fw-bold mb-2">DelEx (Dubai Petroleum)</h5>
+                            <p class="text-muted small mb-3">Asset inspection and lifecycle management system used for
+                                tracking work orders, inspections, and operational assets.</p>
+                            <h6 class="fw-bold small text-primary mb-2">Responsibilities:</h6>
+                            <ul class="list-unstyled text-muted small mb-0">
+                                <li>• Functional testing (Web/Mobile)</li>
+                                <li>• Regression testing before releases</li>
+                                <li>• Data sync validation</li>
+                                <li>• Bug reporting & coordination</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-lg-4 col-md-6 fade-up">
+                        <div class="card h-100 border-0 shadow-sm project-card p-4">
+                            <span class="project-badge">Mobile Application</span>
+                            <h5 class="fw-bold mb-2">NTC Logistics Route Survey</h5>
+                            <p class="text-muted small mb-3">Route survey application designed to ensure safe oversized
+                                logistics transportation through obstacle analysis.</p>
+                            <h6 class="fw-bold small text-primary mb-2">Responsibilities:</h6>
+                            <ul class="list-unstyled text-muted small mb-0">
+                                <li>• Offline/Online workflow validation</li>
+                                <li>• Field data sync testing</li>
+                                <li>• UI validation (Real usage)</li>
+                                <li>• Functional & Usability testing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="col-lg-4 col-md-6 fade-up">
+                        <div class="card h-100 border-0 shadow-sm project-card p-4">
+                            <span class="project-badge">Mobile Application</span>
+                            <h5 class="fw-bold mb-2">NTC Logistics Driver App</h5>
+                            <p class="text-muted small mb-3">Driver-focused app managing attendance tracking and trip
+                                expense workflows.</p>
+                            <h6 class="fw-bold small text-primary mb-2">Responsibilities:</h6>
+                            <ul class="list-unstyled text-muted small mb-0">
+                                <li>• Functional validation</li>
+                                <li>• Data accuracy testing</li>
+                                <li>• User workflow testing</li>
+                                <li>• Regression verification</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="col-lg-4 col-md-6 fade-up">
+                        <div class="card h-100 border-0 shadow-sm project-card p-4">
+                            <span class="project-badge">Web Application</span>
+                            <h5 class="fw-bold mb-2">Hatsun Enterprise App</h5>
+                            <p class="text-muted small mb-3">Enterprise management platform handling branches, storage,
+                                employee records, and compliance reporting.</p>
+                            <h6 class="fw-bold small text-primary mb-2">Responsibilities:</h6>
+                            <ul class="list-unstyled text-muted small mb-0">
+                                <li>• End-to-end functional testing</li>
+                                <li>• Role-based access validation</li>
+                                <li>• Data integrity testing</li>
+                                <li>• UI consistency validation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="col-lg-4 col-md-6 fade-up">
+                        <div class="card h-100 border-0 shadow-sm project-card p-4">
+                            <span class="project-badge">Web Application</span>
+                            <h5 class="fw-bold mb-2">Probit Infotech Appraisal</h5>
+                            <p class="text-muted small mb-3">Performance appraisal and goal tracking system supporting
+                                organizational review workflows.</p>
+                            <h6 class="fw-bold small text-primary mb-2">Responsibilities:</h6>
+                            <ul class="list-unstyled text-muted small mb-0">
+                                <li>• Workflow validation</li>
+                                <li>• Form & approval flow testing</li>
+                                <li>• Regression testing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="col-lg-4 col-md-6 fade-up">
+                        <div class="card h-100 border-0 shadow-sm project-card p-4">
+                            <span class="project-badge">Web & Mobile Application</span>
+                            <h5 class="fw-bold mb-2">IP Rings Production System</h5>
+                            <p class="text-muted small mb-3">Production tracking and inventory location management
+                                system.</p>
+                            <h6 class="fw-bold small text-primary mb-2">Responsibilities:</h6>
+                            <ul class="list-unstyled text-muted small mb-0">
+                                <li>• Production data validation</li>
+                                <li>• Storage tracking verification</li>
+                                <li>• Cross-platform testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testing Workflow Section -->
+        <section id="workflow" class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5 fade-up">
+                    <h6 class="text-accent text-uppercase letter-spacing mb-2">My Process</h6>
+                    <h2 class="fw-bold">Testing Lifecycle</h2>
+                </div>
+
+                <div class="row justify-content-center text-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="d-flex flex-wrap justify-content-center gap-4 position-relative z-1">
+                            <div class="workflow-step">
+                                <div class="step-icon mb-3"><i class="fas fa-file-invoice-dollar"></i></div>
+                                <h6 class="fw-bold small">Analysis</h6>
+                            </div>
+                            <div class="workflow-arrow d-none d-md-block"><i class="fas fa-arrow-right"></i></div>
+
+                            <div class="workflow-step">
+                                <div class="step-icon mb-3"><i class="fas fa-clipboard-list"></i></div>
+                                <h6 class="fw-bold small">Planning</h6>
+                            </div>
+                            <div class="workflow-arrow d-none d-md-block"><i class="fas fa-arrow-right"></i></div>
+
+                            <div class="workflow-step">
+                                <div class="step-icon mb-3"><i class="fas fa-pen-fancy"></i></div>
+                                <h6 class="fw-bold small">Design</h6>
+                            </div>
+                            <div class="workflow-arrow d-none d-md-block"><i class="fas fa-arrow-right"></i></div>
+
+                            <div class="workflow-step">
+                                <div class="step-icon mb-3"><i class="fas fa-play-circle"></i></div>
+                                <h6 class="fw-bold small">Execution</h6>
+                            </div>
+                            <div class="workflow-arrow d-none d-md-block"><i class="fas fa-arrow-right"></i></div>
+
+                            <div class="workflow-step">
+                                <div class="step-icon mb-3"><i class="fas fa-bug"></i></div>
+                                <h6 class="fw-bold small">Reporting</h6>
+                            </div>
+                            <div class="workflow-arrow d-none d-md-block"><i class="fas fa-arrow-right"></i></div>
+
+                            <div class="workflow-step">
+                                <div class="step-icon mb-3"><i class="fas fa-flag-checkered"></i></div>
+                                <h6 class="fw-bold small">Release</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Hire Me Section -->
+        <section id="why-me" class="section-padding bg-primary text-white text-center">
+            <div class="container">
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-4">Why Hire Me?</h2>
+                        <div class="row g-4 text-start">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center bg-white bg-opacity-10 p-3 rounded-3">
+                                    <i class="fas fa-check-circle text-accent me-3 fa-lg"></i>
+                                    <span class="fw-medium">Strong Real-world Testing Exposure</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center bg-white bg-opacity-10 p-3 rounded-3">
+                                    <i class="fas fa-check-circle text-accent me-3 fa-lg"></i>
+                                    <span class="fw-medium">Technical QA & Customer Support Exp</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center bg-white bg-opacity-10 p-3 rounded-3">
+                                    <i class="fas fa-check-circle text-accent me-3 fa-lg"></i>
+                                    <span class="fw-medium">User-Centric Quality Mindset</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center bg-white bg-opacity-10 p-3 rounded-3">
+                                    <i class="fas fa-check-circle text-accent me-3 fa-lg"></i>
+                                    <span class="fw-medium">Adaptable & Quick Learner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5 fade-up">
+                    <h6 class="text-accent text-uppercase letter-spacing mb-2">Get In Touch</h6>
+                    <h2 class="fw-bold">Contact Me</h2>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-lg overflow-hidden">
+                            <div class="row g-0">
+                                <div class="col-md-5 bg-dark text-white p-5 d-flex flex-column justify-content-center">
+                                    <h4 class="fw-bold mb-4">Contact Info</h4>
+                                    <div class="mb-4 d-flex align-items-center contact-info-row">
+                                        <!-- <i class="fas fa-phone text-accent me-3"></i> -->
+                                        <i class="fa-solid fa-phone contact-icon me-3"></i>
+                                        <span>+91 7358474437</span>
+                                    </div>
+                                    <div class="mb-4 d-flex align-items-center contact-info-row">
+                                        <!-- <i class="fas fa-envelope text-accent me-3"></i> -->
+                                        <i class="fa-solid fa-envelope contact-icon me-3"></i>
+                                        <span class="text-nowrap">Murugan.sekar.lpl@gmail.com</span>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="https://www.linkedin.com/in/murugan-sekar-102012195/" target="_blank"
+                                            class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 p-5 bg-white">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label">Name</label>
+                                            <input type="text" class="form-control" placeholder="Your Name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" placeholder="Your Email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Message</label>
+                                            <textarea class="form-control" rows="4"
+                                                placeholder="Your Message"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <p class="mb-0 text-muted small">&copy; 2026 Murugan S — QA Engineer | Ensuring Software Quality</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

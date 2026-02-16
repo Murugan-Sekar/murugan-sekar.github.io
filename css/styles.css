@@ -1,0 +1,501 @@
+:root {
+    /* Color Palette - Professional Teal/Blue */
+    --primary-color: #0d6efd;
+    /* Bootstrap Blue as base */
+    --secondary-color: #6c757d;
+    --accent-color: #0dcaf0;
+    /* Cyan/Teal accent */
+    --dark-bg: #121212;
+    --light-bg: #f8f9fa;
+    --card-bg-light: #ffffff;
+    --card-bg-dark: #1e1e1e;
+    --text-main: #212529;
+    --text-muted: #6c757d;
+
+    /* Gradients */
+    --hero-gradient: linear-gradient(135deg, #bbdefb 0%, #e3f2fd 100%);
+    /* Light: Deeper Blue Top-Left -> Lighter Bottom-Right */
+    --accent-gradient: linear-gradient(45deg, #0d6efd, #0dcaf0);
+    /* Dark Mode Hero: Pure Black handled in selector */
+
+    /* Spacing & Layout */
+    --section-padding: 80px 0;
+    --border-radius: 12px;
+    --transition-speed: 0.3s;
+}
+
+[data-bs-theme="dark"] {
+    --primary-color: #3d8bfd;
+    --text-main: #f8f9fa;
+    --text-muted: #adb5bd;
+    --card-bg-light: #1e1e1e;
+    /* Remap for dark mode */
+}
+
+/* Hero Text Adjustments for Light Mode */
+#hero p.lead,
+#hero h1,
+#hero h2 {
+    color: #0d47a1;
+    /* Deep Professional Blue */
+}
+
+/* Contact Me Button - Light Mode Fix */
+#hero .btn-outline-light {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+#hero .btn-outline-light:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+[data-bs-theme="dark"] #hero .btn-outline-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] #hero .btn-outline-light:hover {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Mini Headings Visibility */
+.text-accent {
+    color: #0a58ca;
+    /* Darker Blue/Accent for Light Mode Readability */
+    font-weight: 600;
+}
+
+[data-bs-theme="dark"] .text-accent {
+    color: var(--accent-color);
+    /* Keep bright Cyan/Teal for Dark Mode */
+    font-weight: normal;
+}
+
+/* Navbar Theme Toggle Visibility */
+#themeToggle {
+    color: #333;
+    /* Default Light Mode Color */
+    border-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#themeToggle:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-bs-theme="dark"] #themeToggle {
+    color: #fff;
+    /* Dark Mode Color */
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-bs-theme="dark"] #themeToggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    background-color: var(--light-bg);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+[data-bs-theme="dark"] body {
+    background-color: var(--dark-bg);
+}
+
+/* Glassmorphism Navbar - Dynamic */
+.glass-effect {
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.85);
+    /* Light mode default */
+    transition: background-color 0.3s, border-bottom 0.3s;
+}
+
+[data-bs-theme="dark"] .glass-effect {
+    background: rgba(15, 32, 39, 0.95);
+    /* Dark mode */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand .text-accent {
+    color: var(--accent-color);
+}
+
+.section-padding {
+    padding: var(--section-padding);
+}
+
+/* Animations */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* About Section */
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+.experience-badge {
+    min-width: 140px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-bs-theme="dark"] .experience-badge {
+    background-color: var(--card-bg-dark) !important;
+    color: var(--text-main) !important;
+}
+
+/* Skills Section */
+.bg-light {
+    background-color: var(--light-bg) !important;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: #1a1a1a !important;
+}
+
+.skill-card {
+    background: var(--card-bg-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+[data-bs-theme="dark"] .skill-card {
+    background: var(--card-bg-dark);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Utilities */
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Timeline */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #e9ecef;
+    transform: translateX(-50%);
+}
+
+[data-bs-theme="dark"] .timeline::before {
+    background: #343a40;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    z-index: 2;
+    background-color: var(--primary-color);
+}
+
+.timeline-item .card {
+    background: var(--card-bg-light);
+    border-radius: var(--border-radius);
+}
+
+[data-bs-theme="dark"] .timeline-item .card {
+    background: var(--card-bg-dark);
+}
+
+@media (max-width: 767.98px) {
+    .timeline::before {
+        left: 15px;
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+
+    .timeline-item .row {
+        flex-direction: column;
+    }
+
+    .timeline-item .col-md-5.order-md-1 {
+        text-align: left !important;
+        padding-left: 45px;
+        order: 2 !important;
+        margin-bottom: 10px;
+    }
+
+    .timeline-item .col-md-2 {
+        text-align: left !important;
+        margin-bottom: 0;
+        order: 1 !important;
+    }
+
+    .timeline-item .col-md-5.order-md-3 {
+        padding-left: 45px;
+        order: 3 !important;
+    }
+}
+
+/* Impact Section */
+.impact-card {
+    background-color: var(--card-bg-light) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+[data-bs-theme="dark"] .impact-card {
+    background-color: var(--card-bg-dark) !important;
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Update Hero Section Background Logic to use the new variables */
+#hero {
+    height: 100vh;
+    background: var(--hero-gradient);
+    position: relative;
+    padding-top: 80px;
+    overflow: hidden;
+    color: var(--text-main);
+    /* Ensure text is readable on light bg */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIiBmaWxsLW9wYWNpdHk9IjAuMDUiPjxwYXRoIGQ9Ik0wIDhoNDB2NDBIMHoiIGZpbGw9Im5vbmUiLz48Y2lyY2xlIGN4PSIyIiBjeT0iMiIgcj0iMSIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==');
+    /* Hex pattern overlay */
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+[data-bs-theme="dark"] #hero {
+    background: var(--hero-gradient-dark);
+    color: #fff;
+}
+
+/* Hero Text Adjustments for Light Mode */
+#hero p.lead,
+#hero h1,
+#hero h2 {
+    color: #052c65;
+    /* Dark Blue for contrast on light teal */
+}
+
+[data-bs-theme="dark"] #hero p.lead,
+[data-bs-theme="dark"] #hero h1,
+[data-bs-theme="dark"] #hero h2 {
+    color: #fff;
+}
+
+[data-bs-theme="dark"] .text-light-50 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.text-light-50 {
+    color: rgba(5, 44, 101, 0.7);
+    /* Darker text for light mode */
+}
+
+/* Contact One-Line Fix */
+.contact-info-row {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* Detailed Project Portfolio Section */
+.project-card {
+    border-left: 5px solid var(--primary-color);
+    transition: transform 0.3s ease;
+    background: var(--card-bg-light);
+}
+
+[data-bs-theme="dark"] .project-card {
+    background: var(--card-bg-dark);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-badge {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    background: rgba(13, 110, 253, 0.1);
+    color: var(--primary-color);
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+[data-bs-theme="dark"] .project-badge {
+    background: rgba(61, 139, 253, 0.2);
+    color: #fff;
+}
+
+
+/* Workflow Section */
+.workflow-step {
+    width: 100px;
+    z-index: 2;
+}
+
+.step-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background: var(--card-bg-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    position: relative;
+    border: 2px solid var(--light-bg);
+}
+
+[data-bs-theme="dark"] .step-icon {
+    background: var(--card-bg-dark);
+    border-color: var(--dark-bg);
+}
+
+.workflow-arrow {
+    display: flex;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.bg-dark {
+    background-color: #151515 !important;
+}
+
+[data-bs-theme="dark"] .bg-white {
+    background-color: var(--card-bg-dark) !important;
+    color: var(--text-main);
+}
+
+.form-control {
+    background-color: var(--light-bg);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.8rem;
+}
+
+[data-bs-theme="dark"] .form-control {
+    background-color: #2a2a2a;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: var(--card-bg-light);
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+[data-bs-theme="dark"] .form-control:focus {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    /* Light mode border */
+    background-color: var(--light-bg);
+    /* Light mode bg */
+    color: var(--text-muted);
+    /* Light mode text */
+    transition: all 0.3s ease;
+}
+
+[data-bs-theme="dark"] footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    /* Dark mode border */
+    background-color: #000;
+    /* Dark mode bg */
+    color: #adb5bd;
+    /* Dark mode text */
+}
+
+/* -----------------------------
+   Contact Icons Consistency
+------------------------------*/
+
+.contact-icon {
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+    color: var(--bs-primary);
+}
+
+/* Dark theme fix */
+[data-bs-theme="dark"] .contact-icon {
+    color: #00d4ff;
+    /* same accent used elsewhere */
+}
+
+/* Prevent Bootstrap overrides */
+.bg-dark .contact-icon {
+    opacity: 1;
+    filter: none;
+}
+
+/* ===============================
+   Contact Icons (Phone + Mail)
+================================ */
+
+.contact-icon {
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+    color: var(--bs-primary);
+    /* Light theme color */
+}
+
+/* Dark Theme Color Fix */
+[data-bs-theme="dark"] .contact-icon {
+    color: #00d4ff;
+    /* theme accent for dark mode */
+}
+
+/* Prevent Bootstrap bg-dark overrides */
+.bg-dark .contact-icon {
+    opacity: 1;
+    filter: none;
+}
