@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background: Softened Primary Blue rounded square -->
+  <rect x="0" y="0" width="64" height="64" rx="14" fill="#0d6efd"/>
+  
+  <!-- Letter M: White, bold, modern sans-serif -->
+  <path d="M16 48 V 20 L 32 34 L 48 20 V 48" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Checkmark Badge: Cyan accent circle with check -->
+  <circle cx="52" cy="52" r="12" fill="#0dcaf0" stroke="white" stroke-width="2"/>
+  <path d="M47 52 L 50 55 L 57 48" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
