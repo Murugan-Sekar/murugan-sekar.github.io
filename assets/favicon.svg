@@ -1,11 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Background: Softened Primary Blue rounded square -->
-  <rect x="0" y="0" width="64" height="64" rx="14" fill="#0d6efd"/>
+  <!-- Background Circle: White with Blue Border -->
+  <circle cx="32" cy="32" r="30" fill="white" stroke="#0d6efd" stroke-width="2"/>
   
-  <!-- Letter M: White, bold, modern sans-serif -->
-  <path d="M16 48 V 20 L 32 34 L 48 20 V 48" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  
-  <!-- Checkmark Badge: Cyan accent circle with check -->
-  <circle cx="52" cy="52" r="12" fill="#0dcaf0" stroke="white" stroke-width="2"/>
-  <path d="M47 52 L 50 55 L 57 48" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Group: Scaled up (0.85) - Maximum safe size inside circle -->
+  <g transform="translate(4.8, 4.8) scale(0.85)">
+    <!-- Shield: Solid Blue Fill -->
+    <path d="M32 4 L8 14 V 31 C8 48 19 60 32 63 C45 60 56 48 56 31 V 14 L32 4Z" fill="#0d6efd" stroke="#0d6efd" stroke-width="2" stroke-linejoin="round"/>
+    
+    <!-- Letter M: White Stroke (Contrast against Blue Shield) -->
+    <path d="M18 45 V 23 L 32 35 L 46 23 V 45" stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
 </svg>
