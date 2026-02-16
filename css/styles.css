@@ -76,6 +76,13 @@
 
 /* Navbar Theme Toggle Visibility */
 #themeToggle {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     color: #333;
     /* Default Light Mode Color */
     border-color: rgba(0, 0, 0, 0.1);
@@ -399,6 +406,7 @@ body {
     align-items: center;
     color: var(--text-muted);
     font-size: 1.2rem;
+    margin-top: 1.2rem;
 }
 
 /* Contact Section */
